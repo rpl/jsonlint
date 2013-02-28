@@ -1,7 +1,7 @@
 {
   "author": "Zach Carter <zach@carter.name> (http://zaa.ch)",
   "name": "jsonlint",
-  "description": "Validate JSON",
+  "description": "Validate JSON - jsonlint package loadable as addon-sdk module",
   "keywords": [
     "json",
     "validation",
@@ -12,29 +12,16 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/zaach/jsonlint.git"
+    "url": "git://github.com/rpl/jsonlint.git#feature-nomain-cli-option"
   },
   "bugs": {
-    "url": "http://github.com/zaach/jsonlint/issues"
+    "url": "http://github.com/rpl/jsonlint/issues"
   },
   "main": "lib/jsonlint.js",
-  "bin": {
-    "jsonlint": "lib/cli.js"
-  },
-  "engines": {
-    "node": ">= 0.6"
-  },
-  "dependencies": {
-    "nomnom": ">= 1.5.x",
-    "JSV": ">= 4.0.x"
-  },
   "devDependencies": {
     "test": "*",
-    "jison": "*",
+    "jison": "git://github.com/rpl/jison.git#feature-nomain-cli-option",
     "uglify-js": "*"
-  },
-  "scripts": {
-    "test": "node test/all-tests.js"
   },
   "homepage": "http://zaach.github.com/jsonlint/",
   "optionalDependencies": {}
