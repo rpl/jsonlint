@@ -2,7 +2,7 @@
 all: build test site
 
 build:
-	jison src/jsonlint.y src/jsonlint.l
+	./node_modules/.bin/jison --no-main src/jsonlint.y src/jsonlint.l
 	mv jsonlint.js lib/jsonlint.js
 	node scripts/bundle.js | uglifyjs > web/jsonlint.js
 
